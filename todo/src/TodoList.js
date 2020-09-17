@@ -3,21 +3,25 @@ import {initialState, reducer} from './reducers/reducer';
 import { useState, useReducer } from "react";
 import Todo from './Todo';
 
-function TodoList(props){
 
+const TodoList = props => {
+ //const [state, dispatch] = useReducer(reducer, initialState)
     return (
         <div>
-            {
-            props.state.map( todo => (
-                <Todo
-                
-                />
-            ))
-
-            }
-            
-        </div>)
+            <h2>What to do?</h2>
+                                   
+            {props.state.todos.map( todo => {
+                    return (<Todo 
+                        key = {todo.id} 
+                        todo = {todo} 
+                        dispatch = {props.dispatch}
+                        updateCompleted = {props.updateCompleted}
+                        />)                             
         
+                })
+            }
+        </div>  
+    )  
 };
 
-export default TodoList;
+export default  TodoList;

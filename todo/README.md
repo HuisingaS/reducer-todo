@@ -1,5 +1,3 @@
-##Path and initial push : "git reset" command was needed- this push will replace
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
