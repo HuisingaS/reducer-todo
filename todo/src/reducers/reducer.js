@@ -30,6 +30,11 @@ export const reducer = (state, action) => {
                 })
             };
             
+        case "CLEAN_COMPLETED" :
+            return {
+                todos: state.todos.filter(eachTodo => !eachTodo.completed)
+            }
+
         default:
             return state;
     };
