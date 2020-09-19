@@ -39,3 +39,10 @@ export const reducer = (state, action) => {
             return state;
     };
 };
+
+/*Reducer functions take two arguments – the current state and action – and return a new, updated state object based on both arguments.
+
+//In pseudocode, this idea looks like:
+
+//Copy
+    (state, action) => newState*/
